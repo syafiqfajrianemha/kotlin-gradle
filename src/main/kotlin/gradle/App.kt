@@ -3,6 +3,8 @@
  */
 package gradle
 
+import com.google.gson.Gson
+
 class App {
     val greeting: String
         get() {
@@ -12,4 +14,6 @@ class App {
 
 fun main(args: Array<String>) {
     println(App().greeting)
+
+    val gson = Gson()
 }

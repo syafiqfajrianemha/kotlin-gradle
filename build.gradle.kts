@@ -16,9 +16,14 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
+    // google() // biasanya untuk android
 }
 
 dependencies {
+    // implementation, adalah dependency yang digunakan oleh kode program kita
+    // testImplementation, adalah dependency yang digunakan oleh  kode unit test kita
+
     // Align versions of all Kotlin components
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
 
@@ -30,6 +35,11 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+
+    // Add coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
+
+    implementation("com.google.code.gson:gson:2.8.6")
 }
 
 application {
