@@ -36,3 +36,12 @@ application {
     // Define the main class for the application.
     mainClassName = "gradle.AppKt"
 }
+
+tasks.register("helloworld") {
+    doFirst {
+        println("Hello")
+    }
+    doLast {
+        println("World!")
+    }
+}
