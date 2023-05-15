@@ -45,3 +45,14 @@ tasks.register("helloworld") {
         println("World!")
     }
 }
+
+tasks.register("author") {
+    val author: String by project
+    val email: String by project
+    doFirst {
+        println("Author name: $author")
+    }
+    doLast {
+        println("Author email: $email")
+    }
+}
