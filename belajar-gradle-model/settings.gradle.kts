@@ -7,7 +7,4 @@
  * in the user manual at https://docs.gradle.org/6.6/userguide/multi_project_builds.html
  */
 
-rootProject.name = "gradle"
-
-include("belajar-gradle-model")
-include("belajar-gradle-util")
+rootProject.name = "belajar-gradle-model"

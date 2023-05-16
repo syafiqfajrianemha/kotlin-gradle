@@ -4,6 +4,8 @@
 package gradle
 
 import com.google.gson.Gson
+import belajar.gradle.model.Product
+import belajar.gradle.util.StringUtil
 
 class App {
     val greeting: String
@@ -16,4 +18,8 @@ fun main(args: Array<String>) {
     println(App().greeting)
 
     val gson = Gson()
+
+    val product = Product("1", "Handphone Ipun")
+    println(StringUtil.toUpper("Syafiq Fajrian Emha"))
+    println(StringUtil.toUpper(product.name))
 }

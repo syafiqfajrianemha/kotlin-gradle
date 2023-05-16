@@ -40,6 +40,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
 
     implementation("com.google.code.gson:gson:2.8.6")
+
+    // add subprojects
+    implementation(project(":belajar-gradle-model"))
+    implementation(project(":belajar-gradle-util"))
 }
 
 application {
